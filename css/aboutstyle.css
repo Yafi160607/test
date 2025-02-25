@@ -1,0 +1,436 @@
+:root {
+  font-family: "Anton", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+hr {
+  border: 1px solid #333;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.main_wrapper {
+  display: flex;
+  flex-grow: 1;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 100vh;
+  padding: 0 1.7rem;
+  color: #FF6F61;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  background-color: #FF6F61;;
+}
+
+.sidebar.expanded {
+  width: 220px; /* Width saat diperluas */
+}
+
+.sidebar:hover {
+  width: 220px;
+  transition: 0.5s;
+}
+
+.logo {
+  height: 80px;
+  padding: 16px;
+}
+
+.menu {
+  height: 88%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 1rem;
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: all 0, 5 ease-in-out;
+}
+
+.menu li:hover,
+.active {
+  background: #f5ce88;
+}
+
+.menu a {
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.menu a span {
+  overflow: hidden;
+}
+
+.menu a i {
+  font-size: 1.3rem;
+}
+
+.Logout {
+  position: absolute;
+  bottom: 1.3rem;
+  left: 0;
+  width: 100%;
+}
+
+/* Drop Down Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #FF6F61;;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.dropdown-content li a {
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+  align-items: center;
+  gap: 0;
+  padding: 0.3rem 0.3rem;
+}
+
+.dropdown-content ul li a:hover {
+  background-color: #f5ce88;
+}
+
+/* Header part */
+
+.main_container {
+  flex: 1; /* ini yang ditambah */
+  background: #fff9f0;
+  width: 100%;
+  width: calc(100% - 110px);
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.header_wrapper img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #FF6F61;;
+  border-radius: 10px;
+  padding: 10px 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.header_title {
+  color: black;
+}
+
+.user_info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Search Box */
+.search_box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  flex-grow: 1;
+  max-width: 300px;
+  margin-left: 300px;
+}
+
+/*Container part */
+.head {
+  margin-top: 0.5rem; /* Adjust the space between the header and the h5 */
+  text-align: left; /* Ensures the text is aligned to the left */
+  padding: 0.8rem 1.8rem;
+  border: 2px solid #f6a3a3;
+  background-color: #FF6F61;;
+  display: inline-block;
+  border-radius: 25px;
+  margin-left: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.head h5 {
+  font-size: 1.1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Jarak antara .cafe-name dan .information */
+  margin-top: -5rem;
+  margin-right: -6rem;
+}
+
+.cafe-name {
+  display: grid;
+  justify-content: center; /* Memusatkan .cafe-name */
+  margin-left: -3rem;
+}
+
+.cafe-name span {
+  font-size: 85px;
+  font-weight: 800;
+  font-family: "Anton", sans-serif;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-bottom: -1.8rem; /* Jarak antar tulisan CILEMBU, HILLS, CAFE */
+}
+
+.information {
+  max-width: 600px; /* Lebar maksimal agar konten tidak terlalu lebar */
+  margin-top: 12rem; /* Jarak dari .cafe-name */
+  text-align: left;
+  margin-left: -8rem; /* Sesuaikan ini agar pas di bawah cafe-name */
+}
+
+.head-desc h6 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+.desc {
+  justify-content: center;
+}
+
+.desc p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+  max-width: 250px; /* Menyesuaikan lebar agar lebih proporsional */
+  text-align: justify;
+  font-weight: 200;
+}
+
+.foot p {
+  font-family: "Cursive"; /* Mirip dengan 'Thanks' di gambar contoh */
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  font-weight: 300;
+}
+
+.bout-cafe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.color-pallete {
+  display: flex;
+  gap: 12px;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.color-pallete span {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+}
+
+.social-media {
+  text-align: right;
+  display: inline;
+  padding-left: 2rem;
+}
+
+.social-media a {
+  color: black;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+/* Footer part */
+.last-container {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 570px;
+  background-color: black;
+  padding: 2rem 0; /* Increased padding for more space */
+  z-index: 1000;
+  padding-left: 2.5rem;
+  padding-top: 3.5rem; /* Ensures it appears above other content if necessary */
+}
+
+/* Centering the footer text content */
+.name-cafe {
+  display: grid;
+  justify-content: left;
+  margin-bottom: 5rem; /* Center the content horizontally */ /* Center text within each span */
+}
+
+/* Styling for the individual span elements */
+.name-cafe h3 {
+  font-size: 90px;
+  font-weight: 800;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: -1.2rem;
+  text-align: left; /* Adjust margin to control spacing */
+}
+
+.name-cafe span {
+  font-size: 90px;
+  font-weight: 800;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+}
+
+.social-media .head-social-media {
+  box-sizing: border-box;
+  background-color: #b45b59;
+  width: 22rem;
+  margin-left: -3rem;
+  border-radius: 0 30px 30px 0;
+  margin-bottom: 0.1rem;
+}
+
+.head-social-media h5 {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+.social-media-icon li {
+  list-style: none;
+  display: inline-block;
+  margin-top: -0.1rem;
+}
+
+.social-media-icon a {
+  text-decoration: none;
+  color: #fff9f0;
+  font-size: 50px;
+  text-align: center;
+  padding-right: 1.5rem;
+}
+
+.footer-content {
+  display: flex;
+  gap: 2rem; /* Memberikan jarak antara .social-media dan .main-footer */
+}
+
+.our-contact {
+  margin-top: 0.3rem;
+}
+.our-contact h3 {
+  color: #696969;
+  font-size: 18px;
+}
+.our-contact li {
+  list-style: none;
+  color: #696969;
+  font-size: 15px;
+}
+
+.main-footer {
+  display: inline;
+  margin-left: 20rem;
+  margin-top: -18rem;
+  justify-items: center;
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */ /* Center content */
+  gap: 2rem;
+}
+
+.about-us-footer {
+  color: #fff9f0;
+  text-align: center;
+  font-size: 38px;
+}
+
+/* Ensures that the text in each link is centered within its list */
+.about-us-sub-footer {
+  text-align: center; /* Center the text in the list */
+  padding: 0; /* Remove extra padding that might offset centering */
+}
+
+.about-us-sub-footer li {
+  list-style: none;
+  margin: 0.5rem 0; /* Adjust spacing as needed */
+}
+
+.about-us-sub-footer li a {
+  color: #fff9f0;
+  text-decoration: none;
+  display: block; /* Ensures span takes full width to align text */
+  text-align: center;
+  font-size: 20px;
+  margin-top: -5px;
+  /* Centers text within each span */
+}
+
+/* Sign Up */
+.footer-button {
+  box-sizing: border-box;
+  background-color: #b45b59;
+  width: 215px; /* Add padding for height and vertical centering */
+  border-radius: 25px; /* Rounded corners */
+  display: flex;
+  height: fit-content;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  margin-left: 8rem;
+  margin-top: 4.8rem;
+  margin-bottom: -1.5rem; /* Center content vertically */
+}
+
+.footer-button a {
+  text-decoration: none;
+  color: #fff9f0;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  padding: 13px 10px;
+}

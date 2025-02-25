@@ -1,0 +1,118 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f8f8f2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.header i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.header span {
+    font-size: 18px;
+}
+
+.title {
+    font-size: 32px;
+    color: #d4a373;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title span {
+    display: block;
+}
+
+.form-container {
+    margin-top: 200px;
+}
+
+.login {
+    color: #a8a8a8;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 280px;
+    position: relative;
+    top: -20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:  #ffb38e;
+    font-size: 16px;
+}
+
+.form-group input[type="password"] {
+    position: relative;
+}
+
+.form-group .password-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.form-group label {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 14px;
+    color: #a8a8a8;
+}
+
+.form-group.password-group {
+    margin-top: 30px;
+}
+
+.btn {
+    width: 320px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-regist {
+    background-color:  #ffb38e;
+    color: white;
+    margin-bottom: 10px;
+}
+

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma;
+  }
+  
+  body {
+    background-color: #f0f0f0; 
+    margin-bottom: 50px;
+  }
+
+/* Navbar */
+ .navbar {
+    width: 100%;
+    background-color: #333;
+    padding: 1em 0;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    padding-left: 180px;
+  }
+  
+  .nav-list li {
+    margin: 0 1em;
+  }
+  
+  .nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em;
+  }
+  
+  .nav-list a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  .logout {
+    color: #ff6666;
+  }
+  /* end navbar */
+
+  .container {
+    padding: 20px;
+    margin-left: 160px;
+}
+
+.column-input {
+    padding-top: 15px;
+    max-width: 400px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .btn-primary {
+    background-color: #007bff; /* Warna biru */
+    color: white; /* Warna teks putih */
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Warna biru yang lebih gelap saat di-hover */
+  }
+  
+  .btn-primary:active {
+    background-color: #004494; /* Warna biru yang lebih gelap saat tombol ditekan */
+  }
+  
+  .btn-primary:focus {
+    outline: none;
+  }
+
+  .btn-danger {
+    background-color: #cd421b; /* Warna biru */
+    color: white; /* Warna teks putih */
+    padding: 10px 20px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .alert-primary {
+    padding: 20px;
+    margin: 10px 0;
+    max-width: 400px; /* Mengatur lebar maksimum elemen */
+    background-color: #d7f8df;
+    color: #1c7225;
+    border: 1px solid #d7f8df;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Menyelaraskan teks di tengah */
+    }
+
+    .alert-warning {
+      padding: 20px;
+      margin: 10px 0;
+      max-width: 400px; /* Mengatur lebar maksimum elemen */
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+      text-align: center; /* Menyelaraskan teks di tengah */
+      }

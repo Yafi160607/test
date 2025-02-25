@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f0f0f4; 
+  }
+  
+  .navbar {
+    width: 100%;
+    background-color: #555;
+    padding: 10px;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    display: flex;  /* Memperbaiki typo */
+    padding-left: 180px;
+  }
+  
+  .nav-list li {
+    margin: 0 1em;
+  }
+  
+  .nav-list a {
+    color: #fff;  /* Memperbaiki warna */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+  
+  .nav-list a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  .logout {
+    color: #ff6666;
+  }
+  
+  .breadcrumb {
+    font-size: 14px;
+    color: gray;
+    margin-top: 40px;
+    margin-left: 150px;
+    padding-bottom: 10px;
+  }
+  
+  .breadcrumb a {
+    text-decoration: none;
+    color: gray;
+  }
+  
+  .container {
+    margin: 20px;
+    margin-left: 150px;
+  }
+  
+  .container h2 {
+    font-size: 24px;
+  }
+  
+  .card_container {
+    padding-left: 200px;
+  }
+  
+  .card_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+  
+  .kategori_card, .produk_card {
+    background: #7e523d;
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 290px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .kategori_card:hover, .produk_card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card_header, .card_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .action, .process {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .kategori_value, .produk_value {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 200;  /* Memperbaiki nilai font-weight */
+    margin-bottom: 10px;
+  }
+  
+  .detail {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;  /* Memperbaiki nilai font-weight */
+  }
+  
+  .judul {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: 8px;
+    text-decoration: none;
+  }
+  
+  .card_header i, .card_head i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    font-size: 30px;
+  }
+  

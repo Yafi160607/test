@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 110px;
+  height: 100vh;
+  padding: 0 1.7rem;
+  color: #FF6F61;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  background-color: #FF6F61;
+}
+
+.sidebar.expanded {
+  width: 240px; /* Width saat diperluas */
+}
+
+.sidebar:hover {
+  width: 240px;
+  transition: 0.5s;
+}
+
+.logo {
+  height: 80px;
+  padding: 16px;
+}
+
+.menu {
+  height: 88%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.menu li {
+  padding: 1rem;
+  margin: 8px 0;
+  border-radius: 8px;
+  transition: all 0,5 ease-in-out;
+}
+
+.menu li:hover,
+.active {
+  background: #f5ce88;
+}
+
+.menu a {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu a span {
+  overflow: hidden;
+}
+
+.menu a i {
+  font-size: 1.2rem;
+}
+
+.Logout {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #FF6F61;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li a {
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+  align-items: center;
+  gap: 0;
+  padding: 0.3rem 0.3rem;
+}
+
+.dropdown-content ul li a:hover {
+  background-color: #f5ce88;
+  width: 100%;
+}
+
+/* Main Container */
+.main_container {
+  width: 100%;
+  padding: 1rem;
+}
+
+.header_wrapper {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FF6F61;
+  border-radius: 10px;
+  padding: 10px 2rem;
+  color: black;
+}
+
+.header_wrapper i {
+  font-size: 2.5rem; /* Ukuran ikon */
+  line-height: 1; /* Mengatur proporsi */
+  cursor: pointer;
+  color: black; /* Warna ikon */
+}
+
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: stretch;
+}
+
+/* Menu Item */
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Memberikan jarak antara elemen */
+  background-color: #ffb38e;
+  color: black;
+  border: 2px solid #ffb38e ; /* Menambahkan border persegi */
+  padding: 8px;
+  margin-left: 10px;
+  width: 350px; /* Menetapkan lebar tetap */
+  height: 350px; /* Menetapkan tinggi tetap */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; 
+}
+
+.menu-item img {
+  width: 100%; 
+  height: 150px; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+.menu-item h3 {
+  font-size: 20px;
+  margin-bottom: 5px; /* Atur jarak bawah */
+}
+
+.menu-item p {
+  margin: 5px 0; /* Atur margin vertikal */
+}
+
+.menu-item p:first-of-type {
+  margin-top: 0; /* Hilangkan margin atas untuk elemen pertama */
+}
+
+.menu-item .price-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Memastikan container memenuhi lebar */
+  margin-top: 5px; /* Memastikan elemen ini berada di bagian bawah */
+}
+
+.menu-item .price {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.menu-item .add-to-cart {
+  background-color: #FF6F61;
+  color:black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menu-item .add-to-cart:hover {
+  background-color: #e5b366;
+}

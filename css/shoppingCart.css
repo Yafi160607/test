@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 110px;
+  height: 100vh;
+  padding: 0 1.7rem;
+  color: #FF6F61;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  background-color: #FF6F61;
+}
+
+.sidebar.expanded {
+  width: 240px; /* Width saat diperluas */
+}
+
+.sidebar:hover {
+  width: 240px;
+  transition: 0.5s;
+}
+
+.logo {
+  height: 80px;
+  padding: 16px;
+}
+
+.menu {
+  height: 88%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.menu li {
+  padding: 1rem;
+  margin: 8px 0;
+  border-radius: 8px;
+  transition: all 0,5 ease-in-out;
+}
+
+.menu li:hover,
+.active {
+  background: #f5ce88;
+}
+
+.menu a {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu a span {
+  overflow: hidden;
+}
+
+.menu a i {
+  font-size: 1.2rem;
+}
+
+.Logout {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #FF6F61;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li a {
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+  align-items: center;
+  gap: 0;
+  padding: 0.3rem 0.3rem;
+}
+
+.dropdown-content ul li a:hover {
+  background-color: #f5ce88;
+  width: 100%;
+}
+
+/* Main Container */
+.main_container {
+  width: 100%;
+  padding: 1rem;
+}
+
+.header_wrapper {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FF6F61;
+  border-radius: 10px;
+  padding: 10px 2rem;
+  color: black;
+}
+
+.header_wrapper i {
+  font-size: 2.5rem; /* Ukuran ikon */
+  line-height: 1; /* Mengatur proporsi */
+  cursor: pointer;
+  color: black; /* Warna ikon */
+}
+.cart-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: stretch;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Memberikan jarak antara elemen */
+  background-color: white;
+  color: black;
+  border: 2px solid white ; /* Menambahkan border persegi */
+  padding: 8px;
+  margin-left: 10px;
+  width: 300px; /* Menetapkan lebar tetap */
+  height: 350px; /* Menetapkan tinggi tetap */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; 
+}
+
+.cart-item img {
+  width: 250px; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+.item-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+ margin-right: 150px;
+}
+
+.item-price {
+  color: black;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 8px;
+}
+
+.quantity-control {
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 170px;
+  margin-top: -40px;
+}
+
+.quantity-button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffb38e;
+  background-color: #ffb38e;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.quantity-value {
+  margin: 0 10px;
+}
+
+.subtotal {
+  margin-right: 140px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.cart-summary {
+  text-align: left; /* Rata kiri */
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.total-amount {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.continue-shopping {
+  display: flex;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.continue-shopping:hover {
+  background-color: #45a049;
+}
+
+.remove-from-cart {
+  margin-bottom: 10px;
+  margin-left: 170px;
+  margin-top: -20px;
+  background-color: #FF6F61;
+  padding: 10px;
+  border-radius: 10px;
+}

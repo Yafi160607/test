@@ -1,0 +1,362 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fff9f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #e1525f;
+  height: 70px;
+}
+
+/* Logo Styling */
+.logo {
+  margin-left: 76rem; /* Pushes the logo to the right */
+}
+
+.logo img {
+  width: 50px;
+  border-radius: 100%;
+  margin-right: -10rem;
+}
+
+.main-wrapper {
+  margin: 3rem 5rem 3rem 5rem;
+}
+
+main {
+  display: flex;
+  max-width: 1300px; /* Lebar maksimal konten */
+  margin: 20px auto; /* Mengatur konten agar berada di tengah */
+  padding: 20px;
+  border-radius: 15px;
+  align-items: center;
+  gap: 70px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+/* Bagian best-seller */
+.best-seller {
+  flex: 1;
+  padding: 5px;
+  text-align: left;
+}
+
+.best-seller h1 {
+  font-size: 3.5em;
+  color: #333;
+  margin: 0 0 5px 0; /* Jarak bawah judul */
+}
+
+.best-seller p {
+  font-size: 20px;
+  color: #666;
+  line-height: 1.5;
+  margin: 5px 0;
+}
+
+/* Tombol order */
+.button-price-container {
+  display: inline-flex;
+  align-items: center; /* Aligns items vertically */
+  gap: 5px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ff7043;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #ff5722;
+}
+
+/* Harga */
+.price {
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Kontainer gambar */
+/* Kontainer gambar */
+.image-container {
+  flex-shrink: 0;
+  width: 300px; /* Width and height are the same */
+  height: 300px; /* Equal to width for a perfect circle */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* Ensures the image is perfectly round */
+  display: block;
+}
+
+.top-produk {
+  display: flex;
+  max-width: 1300px; /* Lebar maksimal konten */
+  margin: 4rem auto; /* Mengatur konten agar berada di tengah */
+  padding: 20px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 3.2rem;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  height: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Kontrol carousel */
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-button {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Transisi antara slides */
+#slide1:checked ~ .carousel-track {
+  transform: translateX(0%);
+}
+
+#slide2:checked ~ .carousel-track {
+  transform: translateX(-100%);
+}
+
+.footer {
+  background-color: #ffb22c;
+  text-align: center;
+  padding: 20px;
+}
+
+.social p {
+  color: #dd4b2a;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.icons i {
+  font-size: 2rem;
+  margin: 0 10px;
+}
+
+.contact p {
+  margin: 5px 0;
+  color: #fff;
+}
+
+.signup button {
+  background-color: #d99282;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.logo-footer img {
+  width: 50px;
+  margin-top: 20px;
+}
+
+/* Footer */
+.last-container {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 590px;
+  background-color: black;
+  padding: 2rem 0; /* Increased padding for more space */
+  z-index: 1000;
+  padding-left: 2.5rem;
+  padding-top: 3.5rem; /* Ensures it appears above other content if necessary */
+}
+
+/* Centering the footer text content */
+.name-cafe {
+  display: grid;
+  justify-content: left;
+  margin-bottom: 5rem; /* Center the content horizontally */ /* Center text within each span */
+}
+
+/* Styling for the individual span elements */
+.name-cafe h3 {
+  font-size: 90px;
+  font-weight: 800;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: -1.2rem;
+  text-align: left; /* Adjust margin to control spacing */
+}
+
+.name-cafe span {
+  font-size: 90px;
+  font-weight: 800;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+}
+
+.social-media .head-social-media {
+  box-sizing: border-box;
+  background-color: #b45b59;
+  width: 22rem;
+  margin-left: -3rem;
+  border-radius: 0 30px 30px 0;
+  margin-bottom: 0.1rem;
+}
+
+.head-social-media h5 {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+.social-media-icon li {
+  list-style: none;
+  display: inline-block;
+  margin-top: -0.1rem;
+}
+
+.social-media-icon a {
+  text-decoration: none;
+  color: #fff9f0;
+  font-size: 50px;
+  text-align: center;
+  padding-right: 1.5rem;
+}
+
+.footer-content {
+  display: flex;
+  gap: 2rem; /* Memberikan jarak antara .social-media dan .main-footer */
+}
+
+.our-contact {
+  margin-top: 0.3rem;
+  text-align: left;
+}
+.our-contact h3 {
+  color: #696969;
+  font-size: 18px;
+}
+.our-contact li {
+  list-style: none;
+  color: #696969;
+  font-size: 15px;
+}
+
+.main-footer {
+  display: inline;
+  margin-left: 20rem;
+  margin-top: -18rem;
+  justify-items: center;
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */ /* Center content */
+  gap: 2rem;
+}
+
+.about-us-footer {
+  color: #fff9f0;
+  text-align: center;
+  font-size: 38px;
+}
+
+/* Ensures that the text in each link is centered within its list */
+.about-us-sub-footer {
+  text-align: center; /* Center the text in the list */
+  padding: 0; /* Remove extra padding that might offset centering */
+}
+
+.about-us-sub-footer li {
+  list-style: none;
+  margin: 0.5rem 0; /* Adjust spacing as needed */
+}
+
+.about-us-sub-footer li a {
+  color: #fff9f0;
+  text-decoration: none;
+  display: block; /* Ensures span takes full width to align text */
+  text-align: center;
+  font-size: 20px;
+  margin-top: -5px;
+  /* Centers text within each span */
+}
+
+/* Sign Up */
+.footer-button {
+  box-sizing: border-box;
+  background-color: #b45b59;
+  width: 215px; /* Add padding for height and vertical centering */
+  border-radius: 25px; /* Rounded corners */
+  display: flex;
+  height: fit-content;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  margin-left: 8rem;
+  margin-top: 4.8rem;
+  margin-bottom: -1.5rem; /* Center content vertically */
+}
+
+.footer-button a {
+  text-decoration: none;
+  color: #fff9f0;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  padding: 13px 10px;
+}
